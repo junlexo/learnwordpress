@@ -1,0 +1,172 @@
+.wrapper {
+	width: 100%;		
+	background: #02c0f9;
+	padding: 15px 15px 0;
+}
+.content-page {
+	margin: 0 auto;
+	height: 100%;
+	/*max-width: 1336px;*/
+}
+h1{
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+h2.title-name {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.content {
+	background: #ffffff;
+	padding: 3px 3px 30px;
+	position: relative;
+}
+.content-top {
+	color: #ffffff;
+	background: #02c0f9;
+	padding: 20px;
+}
+.content-bottom {
+	padding-top: 20px;
+}
+.italic {
+	font-style: italic;
+}
+.italic a {
+	color: #ffffff !important;
+}
+.logo {
+	position: fixed;
+	top: 25px;
+	right: 0px;
+}
+.title-image {
+	margin-bottom: 20px;
+}
+.title-image .icon {
+	width: 30px;
+	padding-bottom: 5px;
+	border-bottom: #474a55 2px solid;
+	margin-bottom: 5px;
+}
+.title-image img {
+	width: 100%;
+}
+.title-image p {
+	font-size: 12px;
+	font-weight: 500;
+}
+label {
+	position: relative;
+	width: 100%;	
+}
+label .number {
+	font-weight: 500;
+	font-size: 20px;
+}
+label .drop {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	max-width: 40px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.form-group input{
+	border-radius: 0;
+	background-color: #02c0f959; 
+	/*transition: 1s;*/
+}
+.form-group.mobile .drop{
+	display: none;
+}
+.form-group.isDropUp {
+	border-bottom: 1px solid;
+}
+.form-group.isDropUp input{
+	display: none;
+}
+.form-group.isDropUp .drop img {
+	content: url('../images/icon-dropdown.PNG');
+}
+.check-left {
+	padding-left: 0;
+	margin-top: 10px;
+}
+.form-group .labelTypeAuth {
+	font-size: 19px;
+}
+.checkbox-form {
+	font-size: 19px;
+	padding: 0 20px;
+}
+.checkbox-form label {
+	position: relative;	
+	padding-left: 27px;
+}
+.checkbox-form label input[type=radio] {
+	display: none;
+}
+.checkbox-form  label i{
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+    background: url(../images/checkbox.png) no-repeat center center;    
+    display: inline-block;
+    background-size: 100%;
+}
+.checkbox-form  label input[type=radio]:checked+i {
+	 background: url(../images/checkbox-checked.png) no-repeat center center;  
+	 background-size: 100%;
+}
+
+.button {
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%;
+}
+.button .btn {
+	background: #ff6700;
+	color: #ffffff;
+	width: 100%;
+}
+.button .btn:hover {
+	background: #ff6700a3;	
+}
+
+@media only screen and (max-width: 991px){
+	.text-left h1 {
+		font-size: 30px;
+	}
+	.title-name {
+		font-size: 27px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.content-top {
+		padding: 20px 0;
+	}
+	.text-left h1 {
+		font-size: 20px;
+	}
+	.text-left p {
+		font-size: 12px;
+	}
+	.title-name {
+		font-size: 16px;
+	}
+	.form-group .labelTypeAuth {
+		font-size: 16px;
+	}
+	.checkbox-form {
+		padding: 0;
+	}
+	.checkbox-form label {
+		font-size: 14px;
+	}	
+}
